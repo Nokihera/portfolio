@@ -6,6 +6,7 @@ import ProjectsPage from "../pages/ProjectsPage";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import AdminSignInPage from "../pages/AdminSignInPage";
+import AdminDashboard from "../pages/AdminDashboard";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
     {
         path: "/login",
         element: <AdminSignInPage/>
+    },
+    {
+        path: "/admin",
+        element: <AdminDashboard/>
     },
     {
         path: "*",
