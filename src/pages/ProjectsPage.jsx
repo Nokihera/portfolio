@@ -13,14 +13,14 @@ const ProjectsPage = () => {
     {
       id: 2,
       name: "Shopping App",
-      description: "A personal portfolio showcasing my work and experience as a front-end developer.",
+      description: "A shopping website showcasing my work and experience as a front-end developer.",
       image: shoppingPj, // Replace with actual project image
       link: "https://react-shopping-neon.vercel.app/",
     },
     {
       id: 3,
-      name: "To-Do App",
-      description: "A simple and elegant to-do list application built with React.",
+      name: "Currency Exchange App",
+      description: "A simple and elegant currency exchange application built with React.",
       image: chatProject, // Replace with actual project image
       link: "https://currency-exchange-app-xi.vercel.app/",
     },

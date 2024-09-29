@@ -101,7 +101,7 @@ const Home = () => {
                   Tailwind CSS.
                 </p>
                 <a
-                  href="#"
+                  href="https://chattervibe.vercel.app/"
                   className="text-yellow-400 hover:text-yellow-300 transition duration-300"
                 >
                   View Project

@@ -5,6 +5,7 @@ import About from "../pages/About";
 import ProjectsPage from "../pages/ProjectsPage";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
+import AdminSignInPage from "../pages/AdminSignInPage";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
                 element: <Contact/>
             }
         ]
+    },
+    {
+        path: "/login",
+        element: <AdminSignInPage/>
     },
     {
         path: "*",
