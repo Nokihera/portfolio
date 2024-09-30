@@ -7,6 +7,7 @@ import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import AdminSignInPage from "../pages/AdminSignInPage";
 import AdminDashboard from "../pages/AdminDashboard";
+import MessageDetail from "../pages/MessageDetail";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     {
         path: "/admin",
         element: <AdminDashboard/>
+    },
+    {
+        path: "/admin/:id",
+        element: <MessageDetail/>
     },
     {
         path: "*",
