@@ -19,13 +19,13 @@ const Home = () => {
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             <Link
-              href="/projects"
+              to={`/projects`}
               className="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-300 transition duration-300"
             >
               View My Projects
             </Link>
             <Link
-              href="/contact"
+              to={`/contact`}
               className="px-6 py-3 border border-white font-semibold rounded-lg hover:bg-white hover:text-black transition duration-300"
             >
               Contact Me
