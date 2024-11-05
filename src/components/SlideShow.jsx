@@ -22,7 +22,7 @@ const SlideShow = () => {
   return (
     <>
       <div
-        className={`grid grid-cols-2 md:grid-cols-3 gap-6 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
           paginationNum === 0 ? "" : "hidden"
         }`}
       >
@@ -30,7 +30,7 @@ const SlideShow = () => {
           <div className="flex justify-center">
             <img src={htmlLogo} alt="" className="h-32" />
           </div>
-          <p className="text-lg font-bold text-center">HTML:5</p>
+          <p className="text-lg font-bold text-center">HTML</p>
         </div>
         <div className="flex-col items-center justify-center space-y-2">
           <div className="flex justify-center">
@@ -46,7 +46,7 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-2 md:grid-cols-3 gap-6 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
           paginationNum === 1 ? "" : "hidden"
         }`}
       >
@@ -70,7 +70,7 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-2 md:grid-cols-3 gap-6 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
           paginationNum === 2 ? "" : "hidden"
         }`}
       >
