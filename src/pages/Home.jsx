@@ -2,6 +2,7 @@ import React from "react";
 import profile from "../assets/profile.jpg"; // Import your profile image
 import chatProject from "../assets/chatProject.png"; // Example project image
 import { Link } from "react-router-dom";
+import SlideShow from "../components/SlideShow";
 
 const Home = () => {
   return (
@@ -60,25 +61,7 @@ const Home = () => {
       <section className="py-12 px-6 bg-gray-900">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-            {[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "React",
-              "Tailwind CSS",
-              "Git",
-              "Firebase",
-              "Responsive Design",
-            ].map((skill, index) => (
-              <div
-                key={index}
-                className="py-3 px-4 bg-gray-800 rounded-lg shadow-md"
-              >
-                <p className="text-white font-semibold">{skill}</p>
-              </div>
-            ))}
-          </div>
+          <SlideShow/>
         </div>
       </section>
 

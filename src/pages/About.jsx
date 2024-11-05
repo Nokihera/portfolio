@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../assets/profile.jpg'; // Replace with your actual profile image path
+import SlideShow from '../components/SlideShow';
 
 const About = () => {
   return (
@@ -31,26 +32,7 @@ const About = () => {
         {/* Skills Section */}
         <div className="mb-12">
           <h3 className="text-3xl font-semibold text-center mb-6">Skills & Expertise</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-            <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold">HTML & CSS</h4>
-            </div>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold">JavaScript</h4>
-            </div>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold">React.js</h4>
-            </div>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold">Tailwind CSS</h4>
-            </div>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold">Responsive Design</h4>
-            </div>
-            <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-              <h4 className="text-xl font-semibold">UI/UX Design</h4>
-            </div>
-          </div>
+          <SlideShow/>
         </div>
 
         {/* Experience Section */}
