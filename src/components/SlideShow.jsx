@@ -16,13 +16,13 @@ const SlideShow = () => {
   useEffect(() => {
     const interval = setInterval(()=>{
         setPaginationNum((prev)=> (prev === totalPages-1 ? 0 : prev + 1));
-    }, 3000)
+    }, 5000)
     return ()=> clearInterval(interval);
   }, [])
   return (
     <>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 slideshow ${
           paginationNum === 0 ? "" : "hidden"
         }`}
       >
@@ -46,7 +46,7 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 slideshow ${
           paginationNum === 1 ? "" : "hidden"
         }`}
       >
@@ -70,7 +70,7 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 slideshow ${
           paginationNum === 2 ? "" : "hidden"
         }`}
       >
