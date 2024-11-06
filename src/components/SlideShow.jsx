@@ -46,7 +46,7 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 slideshow ${
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-row-3 slideshow ${
           paginationNum === 1 ? "" : "hidden"
         }`}
       >

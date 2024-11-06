@@ -24,7 +24,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-[#1f2937] shadow-lg sticky top-0">
+    <nav className="bg-[#1f2937] shadow-lg sticky top-0 z-50">
       <ul className="flex justify-between items-center py-4 px-8">
         {/* Logo */}
         <div>
