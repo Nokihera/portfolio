@@ -3,6 +3,7 @@ import profile from "../assets/profile.jpg"; // Import your profile image
 import chatProject from "../assets/chatProject.png"; // Example project image
 import { Link } from "react-router-dom";
 import SlideShow from "../components/SlideShow";
+import MobileSlideShow from "../components/MobileSlideShow";
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
         {/* Profile Image */}
         <div className="mt-10">
           <img
-            src={profile}
+            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
             alt="Profile"
             className="rounded-lg shadow-lg h-64 w-64 sm:h-80 sm:w-80 object-cover"
           />
@@ -62,6 +63,7 @@ const Home = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Skills</h2>
           <SlideShow/>
+          <MobileSlideShow/>
         </div>
       </section>
 

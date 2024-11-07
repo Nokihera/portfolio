@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../assets/profile.jpg'; // Replace with your actual profile image path
 import SlideShow from '../components/SlideShow';
+import MobileSlideShow from '../components/MobileSlideShow';
 
 const About = () => {
   return (
@@ -33,6 +34,7 @@ const About = () => {
         <div className="mb-12">
           <h3 className="text-3xl font-semibold text-center mb-6">Skills & Expertise</h3>
           <SlideShow/>
+          <MobileSlideShow/>
         </div>
 
         {/* Experience Section */}

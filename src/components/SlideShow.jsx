@@ -22,8 +22,8 @@ const SlideShow = () => {
   return (
     <>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 slideshow ${
-          paginationNum === 0 ? "" : "hidden"
+        className={`hidden gap-6 grid-row-3 slideshow ${
+          paginationNum === 0 ? "md:grid md:grid-cols-3" : "hidden"
         }`}
       >
         <div className="flex-col items-center justify-center space-y-2">
@@ -46,8 +46,8 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 grid-row-3 slideshow ${
-          paginationNum === 1 ? "" : "hidden"
+        className={`hidden gap-6 grid-row-3 slideshow ${
+          paginationNum === 1 ? "md:grid md:grid-cols-3" : "hidden"
         }`}
       >
         <div className="flex-col items-center justify-center space-y-2">
@@ -70,8 +70,8 @@ const SlideShow = () => {
         </div>
       </div>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 slideshow ${
-          paginationNum === 2 ? "" : "hidden"
+        className={`hidden gap-6 grid-row-3 slideshow ${
+          paginationNum === 2 ? "md:grid md:grid-cols-3" : "hidden"
         }`}
       >
         <div className="flex-col items-center justify-center space-y-2">
@@ -87,7 +87,7 @@ const SlideShow = () => {
           <p className="text-lg font-bold text-center">Firebase</p>
         </div>
       </div>
-      <div className="flex justify-center items-center space-x-3 mt-4">
+      <div className="md:flex justify-center items-center space-x-3 mt-4 hidden">
         {[...Array(totalPages)].map((_, index) => (
           <button
             className={` rounded-full size-3 ${
